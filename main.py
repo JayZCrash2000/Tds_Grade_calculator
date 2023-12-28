@@ -44,7 +44,7 @@ Total_score = score_calculator(a,b,c,d,e)
 
 st.text(Total_score)
 
-st.markdown(""" <h5 align = "center">f'{Total_score}'</h5>""", unsafe_allow_html=True)
+# st.markdown(""" <h5 align = "center">f'{Total_score}'</h5>""", unsafe_allow_html=True)
 
 
 
