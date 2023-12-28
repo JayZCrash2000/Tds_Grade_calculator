@@ -86,7 +86,7 @@ if st.button('Start Calculating!'):
   """, unsafe_allow_html=True)
 
 st.markdown("""
-<h2 align="center"> Created by Tamilselvan.N - 21f2001270</h2>
+<h2 align="center"> Created by N.Tamilselvan - 21f2001270</h2>
 """, unsafe_allow_html=True)
 
  
