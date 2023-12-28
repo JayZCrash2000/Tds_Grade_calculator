@@ -68,8 +68,9 @@ Total_score = score_calculator(a,b,c,d,e)
 
 grade = Grade_calculator(Total_score)
 
-
-  <h3 align="center">if st.button('Start Calculating!'):
+st.write('<div class="centered">', unsafe_allow_html=True)
+if st.button('Start Calculating!'):
+  st.write('</div>', unsafe_allow_html=True)
   st.markdown(f"""
   <h3 align="center">Your Total Score : {Total_score:.2f} 
   """, unsafe_allow_html=True)
