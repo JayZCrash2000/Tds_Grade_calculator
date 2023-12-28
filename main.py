@@ -17,7 +17,7 @@ st.markdown("""
 st.markdown("<hr>", unsafe_allow_html=True)
 
 st.markdown("""
-<h3 align="center"> Welcome this app is created  for calculating the final grade for TDS of september-2023 term, a Diploma level course for  BS IN DATA SCIENCE COURSE OFFERED BY IIT MADRAS 
+<h3 align="center"> Welcome to the TDS Grade Calculator app, this app is created  for calculating the final grade for TDS of september-2023 term, a Diploma level course for  BS IN DATA SCIENCE COURSE OFFERED BY IIT MADRAS 
 """, unsafe_allow_html=True)
 
 
