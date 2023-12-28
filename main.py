@@ -69,19 +69,8 @@ Total_score = score_calculator(a,b,c,d,e)
 grade = Grade_calculator(Total_score)
 
 
-st.markdown(
-        """
-        <style>
-        .centered {
-            display: flex;
-            justify-content: center;
-        }
-        </style>
-        """, unsafe_allow_html=True
-    )
 
-st.markdown('<div class="centered">', unsafe_allow_html=True)
-if st.button('Start Calculating!'):
+if st.button(st.markdown(' <h3 align="center">Start Calculating!', unsafe_allow_html=True)):
   
   st.markdown(f"""
   <h3 align="center">Your Total Score : {Total_score:.2f} 
@@ -89,7 +78,7 @@ if st.button('Start Calculating!'):
   st.markdown(f"""
   <h3 align="center">Your Grade for TDS is : {grade} 
   """, unsafe_allow_html=True)
-st.markdown('</div>', unsafe_allow_html=True)
+
 
  
        
