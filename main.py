@@ -68,7 +68,19 @@ Total_score = score_calculator(a,b,c,d,e)
 
 grade = Grade_calculator(Total_score)
 
-st.markdown('<div class="center">', unsafe_allow_html=True)
+
+st.markdown(
+        """
+        <style>
+        .centered {
+            display: flex;
+            justify-content: center;
+        }
+        </style>
+        """, unsafe_allow_html=True
+    )
+
+st.markdown('<div class="centered">', unsafe_allow_html=True)
 if st.button('Start Calculating!'):
   
   st.markdown(f"""
