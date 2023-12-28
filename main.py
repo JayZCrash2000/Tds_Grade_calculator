@@ -6,19 +6,19 @@ st.text('')
 
 st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown("""
-<h1 align="center">  TDS Grade Calculator </h1>
+<h1 align="center">  MAD1 Grade Calculator </h1>
 """, unsafe_allow_html=True)
 
 st.markdown("<hr>", unsafe_allow_html=True)
 
 st.markdown("""
-<h2 align="center"> "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</h2>
+<h2 align="center"> "We should focus on something which we can't achieve." - Narendra Modi</h2>
 """, unsafe_allow_html=True)
 
 st.markdown("<hr>", unsafe_allow_html=True)
 
 st.markdown("""
-<h3 align="center"> Welcome to the TDS Grade Calculator app, this app is created  for calculating the final grade for TDS of september-2023 term, a Diploma level course for  BS IN DATA SCIENCE COURSE OFFERED BY IIT MADRAS 
+<h3 align="center"> Welcome to the MAD1 Grade Calculator app, this app is created  for calculating the final grade for MAD! of september-2023 term, a Diploma level course for  BS IN DATA SCIENCE COURSE OFFERED BY IIT MADRAS 
 """, unsafe_allow_html=True)
 
 
@@ -27,9 +27,13 @@ st.markdown("<hr>", unsafe_allow_html=True)
 
 
 # Final course score T = 0.1GAA + 0.2 ROE1 + 0.2 P1 + 0.2P2 + 0.3F
+def best_calcular(d,e): 
+  return g=max(d,e)
+def max_calculator(f,d,e,g):
+  return c=max(0.35f + 0.2d + 0.25e, 0.4f + 0.3g)
 
-def score_calculator(a,b,c,d,e):
-  return 0.1*a + 0.2*b + 0.2*c + 0.2*d + 0.3*e
+def score_calculator(a,b,c):
+  return 0.15*a + 0.05*b + c
 
 
 def Grade_calculator(total_score):
@@ -56,22 +60,22 @@ def Grade_calculator(total_score):
     return 'F'
 
 
-st.markdown(""" <h5 align = "center">Enter the Graded assignment score:</h5>""", unsafe_allow_html=True)
+st.markdown(""" <h5 align = "center">Enter the Graded Lab Assignment Score:</h5>""", unsafe_allow_html=True)
 a = st.number_input(label = " " , key="first_digit_input") 
 
-st.markdown(""" <h5 align = "center">Enter the Programing quiz score:</h5>""", unsafe_allow_html=True)
+st.markdown(""" <h5 align = "center">Enter the Graded assignment score:</h5>""", unsafe_allow_html=True)
 b = st.number_input(label = " " , key="second_digit_input")  # Using an empty string as label
 
-st.markdown(""" <h5 align = "center">Enter the Course project one score:</h5>""", unsafe_allow_html=True)
-c = st.number_input(label = " " , key="third_digit_input")  # Using an empty string as label
+st.markdown(""" <h5 align = "center">Enter the quiz 1 score:</h5>""", unsafe_allow_html=True)
+d = st.number_input(label = " " , key="third_digit_input")  # Using an empty string as label
 
-st.markdown(""" <h5 align = "center">Enter the Course project two score:</h5>""", unsafe_allow_html=True)
-d = st.number_input(label = " " , key="fourth_digit_input")  # Using an empty string as label
+st.markdown(""" <h5 align = "center">Enter the Course quiz 2 score:</h5>""", unsafe_allow_html=True)
+e = st.number_input(label = " " , key="fourth_digit_input")  # Using an empty string as label
 
 st.markdown(""" <h5 align = "center">Enter the Endterm Exam score:</h5>""", unsafe_allow_html=True)
-e = st.number_input(label = " " , key="fifth_digit_input")  # Using an empty string as label
+f = st.number_input(label = " " , key="fifth_digit_input")  # Using an empty string as label
 
-Total_score = score_calculator(a,b,c,d,e)
+Total_score = score_calculator(a,b,c)
 
 grade = Grade_calculator(Total_score)
 
@@ -87,13 +91,13 @@ if st.button('Start Calculating!'):
   """, unsafe_allow_html=True)
 
 st.markdown("""
-<h2 align="center"> Created by N.Tamilselvan - 21f2001270</h2>
+<h2 align="center"> Created by JayZCrash </h2>
 """, unsafe_allow_html=True)
 
 st.markdown("<hr>", unsafe_allow_html=True)
 
 st.markdown("""
-<h4 align="center"> Dedicating this app to AMIT one of the course TA's for TDS , for his selfless dedication towards teaching us the concepts in depth , friendly and in an easily understandable way </h4>
+<h4 align="center"> Dedicating this app to IITM for giving such a good learning experience to us. Also to the instructors for their selfless dedication towards teaching us the concepts in depth , friendly and in an easily understandable way </h4>
 """, unsafe_allow_html=True)
 
 st.markdown("<hr>", unsafe_allow_html=True)
