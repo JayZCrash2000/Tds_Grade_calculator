@@ -115,6 +115,16 @@ st.markdown("""
 
 st.markdown("<hr>", unsafe_allow_html=True)
 
+st.markdown("""
+<h4 align="center"> Dedicating this app to AMIT one of the course TA's for TDS , for his selfless dedication towards teaching us the concepts in depth , friendly and in an easily understandable way </h4>
+""", unsafe_allow_html=True)
+
+st.markdown("<hr>", unsafe_allow_html=True)
+
+
+
+
+
        
 
 
