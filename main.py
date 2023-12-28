@@ -89,6 +89,11 @@ st.markdown("""
 <h2 align="center"> Created by N.Tamilselvan - 21f2001270</h2>
 """, unsafe_allow_html=True)
 
+
+st.markdown("""
+<h3 align="center"> Dedicating this app to AMIT one of the course TA's for TDS, for his self-less dedication towards teaching us the concepts in depth , friendly and easily understandable way </h3>
+""", unsafe_allow_html=True)
+
  
        
 
