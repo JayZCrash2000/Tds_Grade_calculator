@@ -25,26 +25,63 @@ def score_calculator(a,b,c,d,e):
   return(0.1*a + 0.2*b + 0.2*c + 0.2*d + 0.3*f)
 
 
+def Grade_calculator(total_score):
+  
+  if total_score >= 90:
+    return S
+  
+  elif total_score >= 80:
+    return A
+
+  elif total_score >= 70:
+    return B
+
+  elif total_score >= 60:
+    return C
+
+  elif total_score >= 50:
+    return D
+
+  elif total_score >= 40:
+    return E
+
+  else:
+    return F
+
+
 st.markdown(""" <h5 align = "center">Enter the Graded assignment score:</h5>""", unsafe_allow_html=True)
-a = st.number_input(" ")  # Using an empty string as label
+a = st.number_input(label = " " , key="first_digit_input") 
 
 st.markdown(""" <h5 align = "center">Enter the Programing quiz score:</h5>""", unsafe_allow_html=True)
-b = st.number_input(" ")  # Using an empty string as label
+b = st.number_input(label = " " , key="second_digit_input")  # Using an empty string as label
 
 st.markdown(""" <h5 align = "center">Enter the Course project one score:</h5>""", unsafe_allow_html=True)
-c = st.number_input(" ")  # Using an empty string as label
+c = st.number_input(label = " " , key="third_digit_input")  # Using an empty string as label
 
 st.markdown(""" <h5 align = "center">Enter the Course project two score:</h5>""", unsafe_allow_html=True)
-d = st.number_input(" ")  # Using an empty string as label
+d = st.number_input(label = " " , key="fourth_digit_input")  # Using an empty string as label
 
 st.markdown(""" <h5 align = "center">Enter the Endterm Exam score:</h5>""", unsafe_allow_html=True)
-e = st.number_input(" ")  # Using an empty string as label
+e = st.number_input(label = " " , key="fifth_digit_input")  # Using an empty string as label
 
 Total_score = score_calculator(a,b,c,d,e)
 
-st.text(Total_score)
 
-# st.markdown(""" <h5 align = "center">f'{Total_score}'</h5>""", unsafe_allow_html=True)
+
+
+st.markdown(f"""
+<h3 align="center">Your Total Score : {Total_score} 
+""", unsafe_allow_html=True)
+
+
+grade = Grade_calculator(Total_score)
+
+st.markdown(f"""
+<h3 align="center">Your Grade for TDS is : {grade} 
+""", unsafe_allow_html=True)
+
+
+
 
 
 
