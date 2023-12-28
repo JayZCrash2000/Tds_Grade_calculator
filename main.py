@@ -22,7 +22,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 # Final course score T = 0.1GAA + 0.2 ROE1 + 0.2 P1 + 0.2P2 + 0.3F
 
 def score_calculator(a,b,c,d,e):
-  return(0.1*a + 0.2*b + 0.2*c + 0.2*d + 0.3*f)
+  return 0.1*a + 0.2*b + 0.2*c + 0.2*d + 0.3*e
 
 
 def Grade_calculator(total_score):
