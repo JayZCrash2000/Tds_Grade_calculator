@@ -11,6 +11,12 @@ st.markdown("""
 st.markdown("<hr>", unsafe_allow_html=True)
 
 st.markdown("""
+<h2 align="center"> "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</h2>
+""", unsafe_allow_html=True)
+
+st.markdown("<hr>", unsafe_allow_html=True)
+
+st.markdown("""
 <h3 align="center"> Welcome this app is created  for calculating the final grade for TDS of september-2023 term, a Diploma level course for  BS IN DATA SCIENCE COURSE OFFERED BY IIT MADRAS 
 """, unsafe_allow_html=True)
 
@@ -79,6 +85,9 @@ if st.button('Start Calculating!'):
   <h3 align="center">Your Grade for TDS is : {grade} 
   """, unsafe_allow_html=True)
 
+st.markdown("""
+<h2 align="center"> Created by Tamilselvan.N - 21f2001270</h2>
+""", unsafe_allow_html=True)
 
  
        
