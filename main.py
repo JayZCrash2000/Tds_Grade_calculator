@@ -70,7 +70,7 @@ grade = Grade_calculator(Total_score)
 
 
 
-if st.button(st.markdown(' <h3 align="center">Start Calculating!', unsafe_allow_html=True)):
+if st.markdown(' <h3 align="center">st.button(Start Calculating!'), unsafe_allow_html=True)):
   
   st.markdown(f"""
   <h3 align="center">Your Total Score : {Total_score:.2f} 
