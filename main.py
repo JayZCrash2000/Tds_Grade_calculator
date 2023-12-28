@@ -68,7 +68,7 @@ Total_score = score_calculator(a,b,c,d,e)
 
 grade = Grade_calculator(Total_score)
 
-st.write('<div class="center">', unsafe_allow_html=True)
+st.markdown('<div class="center">', unsafe_allow_html=True)
 if st.button('Start Calculating!'):
   
   st.markdown(f"""
@@ -77,7 +77,7 @@ if st.button('Start Calculating!'):
   st.markdown(f"""
   <h3 align="center">Your Grade for TDS is : {grade} 
   """, unsafe_allow_html=True)
-st.write('</div>', unsafe_allow_html=True)
+st.markdown('</div>', unsafe_allow_html=True)
 
  
        
