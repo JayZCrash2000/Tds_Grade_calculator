@@ -28,25 +28,25 @@ def score_calculator(a,b,c,d,e):
 def Grade_calculator(total_score):
   
   if total_score >= 90:
-    return S
+    return 'S'
   
   elif total_score >= 80:
-    return A
+    return 'A'
 
   elif total_score >= 70:
-    return B
+    return 'B'
 
   elif total_score >= 60:
-    return C
+    return 'C'
 
   elif total_score >= 50:
-    return D
+    return 'D'
 
   elif total_score >= 40:
-    return E
+    return 'E'
 
   else:
-    return F
+    return 'F'
 
 
 st.markdown(""" <h5 align = "center">Enter the Graded assignment score:</h5>""", unsafe_allow_html=True)
